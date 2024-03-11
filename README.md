@@ -11,4 +11,4 @@ C++ 聊天项目实战案例，涵盖grpc，并发线程，网络编程，qt开�
 
 [day03-visualstudio配置boost和jsoncpp](https://gitee.com/secondtonone1/llfcchat/blob/master/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/day03-visualstudio%E9%85%8D%E7%BD%AEboost%E5%92%8Cjsoncpp.md)
 
-
+[day04-beast 搭建http GateServer](https://gitee.com/secondtonone1/llfcchat/blob/master/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/day04-beast%E6%90%AD%E5%BB%BAhttp%E6%9C%8D%E5%8A%A1%E5%99%A8.md)

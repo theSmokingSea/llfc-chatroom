@@ -10,6 +10,8 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << "param" << i << " key is " << elem.first;
 			beast::ostream(connection->_response.body()) << ", " <<  " value is " << elem.second << std::endl;
 		}
+
+		connection->_response.set(http::field::content_type, "text/plain");
 	});
 }
 

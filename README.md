@@ -59,6 +59,10 @@ C++ 聊天项目实战案例，涵盖grpc，并发线程，网络编程，qt开�
 
 [day27-分布式服务设计](https://gitee.com/secondtonone1/llfcchat/blob/master/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/day27-%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1.md)
 
+[day28-好友查询和申请](https://gitee.com/secondtonone1/llfcchat/blob/master/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/day28-%E5%A5%BD%E5%8F%8B%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%94%B3%E8%AF%B7.md)
+
+[day29-好友认证和聊天](https://gitee.com/secondtonone1/llfcchat/blob/master/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/day29-%E5%A5%BD%E5%8F%8B%E8%AE%A4%E8%AF%81%E5%92%8C%E8%81%8A%E5%A4%A9%E9%80%9A%E4%BF%A1.md)
+
 #### 赞赏
 
 您的赞赏是我更新的动力，谢谢支持！

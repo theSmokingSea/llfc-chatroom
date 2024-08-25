@@ -67,4 +67,4 @@ C++ 聊天项目实战案例，涵盖grpc，并发线程，网络编程，qt开�
 
 您的赞赏是我更新的动力，谢谢支持！
 
-![https://cdn.llfc.club/339addb9bf1b8d473309921ac4bbafb.jpg](https://cdn.llfc.club/339addb9bf1b8d473309921ac4bbafb.jpg)
+![https://cdn.llfc.club/dashang.jpg](https://cdn.llfc.club/dashang.jpg)

@@ -8,7 +8,7 @@
 #include "const.h"
 #include "CServer.h"
 #include "ConfigMgr.h"
-#include "hiredis.h"
+#include "hiredis/hiredis.h"
 #include "RedisMgr.h"
 #include "MysqlMgr.h"
 #include "AsioIOServicePool.h"

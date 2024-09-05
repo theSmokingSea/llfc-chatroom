@@ -1,4 +1,4 @@
-#include "UserMgr.h"
+ï»¿#include "UserMgr.h"
 #include "CSession.h"
 #include "RedisMgr.h"
 
@@ -27,8 +27,8 @@ void UserMgr::SetUserSession(int uid, std::shared_ptr<CSession> session)
 void UserMgr::RmvUserSession(int uid)
 { 
 	auto uid_str = std::to_string(uid);
-	//ÒòÎªÔÙ´ÎµÇÂ¼¿ÉÄÜÊÇÆäËû·þÎñÆ÷£¬ËùÒÔ»áÔì³É±¾·þÎñÆ÷É¾³ýkey£¬ÆäËû·þÎñÆ÷×¢²ákeyµÄÇé¿ö
-	// ÓÐ¿ÉÄÜÆäËû·þÎñµÇÂ¼£¬±¾·þÉ¾³ýkeyÔì³ÉÕÒ²»µ½keyµÄÇé¿ö
+	//å› ä¸ºå†æ¬¡ç™»å½•å¯èƒ½æ˜¯å…¶ä»–æœåŠ¡å™¨ï¼Œæ‰€ä»¥ä¼šé€ æˆæœ¬æœåŠ¡å™¨åˆ é™¤keyï¼Œå…¶ä»–æœåŠ¡å™¨æ³¨å†Œkeyçš„æƒ…å†µ
+	// æœ‰å¯èƒ½å…¶ä»–æœåŠ¡ç™»å½•ï¼Œæœ¬æœåˆ é™¤keyé€ æˆæ‰¾ä¸åˆ°keyçš„æƒ…å†µ
 	
 	//RedisMgr::GetInstance()->Del(USERIPPREFIX + uid_str);
 

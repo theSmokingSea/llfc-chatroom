@@ -39,11 +39,24 @@ target_link_libraries(${PROJECT_NAME}
         gRPC::grpc
         gRPC::grpc++
 
+        ProtoMessage
+
         hiredis::hiredis redis++::redis++
         JsonCpp::JsonCpp
-
-        mysqlcppconn8
-        mysqlcppconn
-
-        ProtoMessage
 )
+
+if(CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
+    target_link_libraries(${PROJECT_NAME}
+            PUBLIC
+            boost_filesystem
+            ssl
+            mysqlcppconn8.2
+            mysqlcppconn
+    )
+else ()
+    target_link_libraries(${PROJECT_NAME}
+            PUBLIC
+            mysqlcppconn8
+            mysqlcppconn
+    )
+endif ()

@@ -1,6 +1,12 @@
+# redis 配置下载
 # https://github.com/sewenew/redis-plus-plus.git
 # https://github.com/tporadowski/redis.git
-# brew install mysql-connector-c++
+
+# mysql connector jdbc 环境下载 配置路径如下
+# include_directories("/usr/local/mysql-connector-c++-9.0.0/include")
+# link_directories("/usr/local/mysql-connector-c++-9.0.0/lib64")
+# https://dev.mysql.com/downloads/connector/cpp/
+# 需要将 /usr/local/mysql-connector-c++-9.0.0/lib64 的 libssl.3.dylib 复制到对应的bin目录下
 
 # boost
 set(Boost_USE_STATIC_LIBS       ON)
@@ -34,11 +40,8 @@ if(CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
     set(hiredis_DIR /Users/mp5530/Code/3rdparty/compile/hiredis-sdk/lib/cmake/hiredis)
     set(redis++_DIR /Users/mp5530/Code/3rdparty/compile/redis-plus-plus-sdk/share/cmake/redis++)
 
-    #    include_directories("/usr/local/mysql/include")
-    #    link_directories("/usr/local/mysql/lib")
-
-    #    set(mysql-concpp_DIR "/opt/homebrew/Cellar/mysql-connector-c++/9.0.0")
-    #    find_package(mysql-concpp)
+    include_directories("/usr/local/mysql-connector-c++-9.0.0/include")
+    link_directories("/usr/local/mysql-connector-c++-9.0.0/lib64")
 else ()
     set(Qt5_DIR C:/Software/DevTools/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5)
     set(boost_grpc_root C:/DevCode/3rdparty)

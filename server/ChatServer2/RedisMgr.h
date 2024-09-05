@@ -1,9 +1,10 @@
 ﻿#pragma once
 #include "const.h"
-#include "hiredis.h"
+#include "hiredis/hiredis.h"
 #include <queue>
 #include <atomic>
 #include <mutex>
+#include <thread>
 #include "Singleton.h"
 class RedisConPool {
 public:

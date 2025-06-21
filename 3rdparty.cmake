@@ -8,19 +8,15 @@
 # https://dev.mysql.com/downloads/connector/cpp/
 # 需要将 /usr/local/mysql-connector-c++-9.0.0/lib64 的 libssl.3.dylib 复制到对应的bin目录下
 
-# boost
-set(Boost_USE_STATIC_LIBS       ON)
-set(Boost_USE_MULTITHREADED      ON)
-set(Boost_USE_STATIC_RUNTIME    OFF)
-set(Boost_NO_WARN_NEW_VERSIONS   ON)
-
 if(CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
-    set(boost "/opt/homebrew/Cellar/boost/1.85.0")
-    set(CMAKE_LIBRARY_PATH "${boost}/lib")
-    set(CMAKE_INCLUDE_PATH  "${boost}/include")
+    list(APPEND CMAKE_PREFIX_PATH /Users/mp5530/Code/3rdparty/compile/boost_1_87_sdk)
+    list(APPEND CMAKE_PREFIX_PATH /Users/mp5530/Code/3rdparty/compile/Qt6.8/6.8.1/macos)
+
+    set(qt_required_components Core Widgets Gui Network )
+    find_package(Qt6 COMPONENTS ${qt_required_components}  REQUIRED)
+
+    cmake_policy(SET CMP0167 NEW)
     find_package(Boost COMPONENTS filesystem)
-    link_directories("${boost}/lib")
-    include_directories("${boost}/include")
 
     set(jsoncpp_DIR /Users/mp5530/Code/3rdparty/compile/jsoncpp_sdk/lib/cmake/jsoncpp)
     set(grpc_root_path "/Users/mp5530/Code/3rdparty/compile/grpc-sdk-1.6")
@@ -38,6 +34,7 @@ if(CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
     list(APPEND CMAKE_PREFIX_PATH "${Protobuf_PREFIX_PATH}")
 
     set(hiredis_DIR /Users/mp5530/Code/3rdparty/compile/hiredis-sdk/lib/cmake/hiredis)
+    # https://github.com/sewenew/redis-plus-plus.git
     set(redis++_DIR /Users/mp5530/Code/3rdparty/compile/redis-plus-plus-sdk/share/cmake/redis++)
 
     include_directories("/usr/local/mysql-connector-c++-9.0.0/include")
